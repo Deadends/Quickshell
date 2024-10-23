@@ -1,0 +1,45 @@
+$board-bg-color: aqua;
+$navbar-app-bg-color:green;
+$navbar-board-bg-color:yellow;
+$gap: 10px;
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height:1.3rem;
+  font-size: 14px;
+}
+
+.App{
+  height:100vh;
+  display:grid;
+  grid-template-rows:40px 50px 1fr;
+  background-color: $board-bg-color;
+
+
+  .navbar{
+    padding-left:$gap;
+    display: flex;
+    align-items:center; 
+
+
+    &.app{
+      font-size:1.5rem;
+      background-color:$navbar-app-bg-color;
+      
+    }
+
+    &.board{
+      font-size:1.1rem;
+      background-color:$navbar-board-bg-color;
+    }
+    }
+
+
+  }
+
